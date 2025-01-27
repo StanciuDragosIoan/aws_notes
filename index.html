@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      background: #f0f4f8;
+    }
+    .quiz-container {
+      margin-top:2rem;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 1400px;
+      text-align: center;
+    }
+    .question {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .option{
+      padding: 10px 20px;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .explanation {
+      margin-top:2rem;
+      background: #b0c4de;
+      border: 1px solid #007bff;
+      border-radius: 8px;
+      padding:1rem;
+    }
+
+  
+    .option:hover {
+      background: #e0e7ff;
+    }
+    .option.correct {
+      background: #d4f5d4;
+      border-color: #4caf50;
+    }
+    .option.incorrect {
+      background: #fbdede;
+      border-color: #f44336;
+    }
+    .next-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .next-btn:disabled {
+      background: #b0c4de;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <div id="question" class="question"></div>
+    <div id="options" class="options"></div>
+    <div id="explanation"></div>
+    <button id="next-btn" class="next-btn" disabled>Next</button>
+  </div>
+  <script src="quizdata.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
