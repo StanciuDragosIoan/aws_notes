@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz App</title>
+  <title>NodeJS Buffers</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -83,15 +83,6 @@
       background: #b0c4de;
       cursor: not-allowed;
     }
-
-    .d-block {
-      display: block;
-      margin: 2rem auto;
-      border: 1px solid #ddd;
-      padding: 2rem;
-      border-radius: 15px;
-      max-width: 600px;
-    }
   </style>
 </head>
 
@@ -100,11 +91,9 @@
     <div id="question" class="question"></div>
     <div id="options" class="options"></div>
     <div id="explanation"></div>
-    <a class="d-block" href="/interview_prep/event_loop.html" target="_blank">Event Loop</a>
-    <a class="d-block" href="/interview_prep/streams.html" target="_blank">Streams</a>
-    <a class="d-block" href="/interview_prep/buffers.html" target="_blank">Buffers</a>
+    <button id="next-btn" class="next-btn" disabled>Next</button>
   </div>
-  <script src="quizdata.js"></script>
+  <script src="node_buffers.js"></script>
   <script src="app.js"></script>
 </body>
 

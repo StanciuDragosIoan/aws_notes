@@ -1,116 +1,128 @@
 const quizData = [
   {
-    question: 'What is the AWS Shared Responsibility Model?',
+    question: "What is the AWS Shared Responsibility Model?",
     options: [
-      'A model where AWS is responsible for all security aspects',
-      'A model that splits security and compliance responsibilities between AWS and the customer',
-      'A model where customers handle all security and AWS only provides infrastructure',
-      'A model where security is only relevant for certain AWS services'
+      "A model where AWS is responsible for all security aspects",
+      "A model that splits security and compliance responsibilities between AWS and the customer",
+      "A model where customers handle all security and AWS only provides infrastructure",
+      "A model where security is only relevant for certain AWS services",
     ],
     correct: [1],
-    explanation: 'AWS and the customer share security responsibilities; AWS secures the cloud infrastructure, while customers secure their data and configurations.'
+    explanation:
+      "AWS and the customer share security responsibilities; AWS secures the cloud infrastructure, while customers secure their data and configurations.",
   },
   {
-    question: 'What is AWS responsible for in the Shared Responsibility Model?',
+    question: "What is AWS responsible for in the Shared Responsibility Model?",
     options: [
-      'Managing guest operating systems and customer applications',
-      'Protecting infrastructure, hardware, networking, and physical security',
-      'Configuring security groups and patching customer software',
-      'Defining compliance policies for customer environments'
+      "Managing guest operating systems and customer applications",
+      "Protecting infrastructure, hardware, networking, and physical security",
+      "Configuring security groups and patching customer software",
+      "Defining compliance policies for customer environments",
     ],
     correct: [1],
-    explanation: 'AWS is responsible for securing the cloud infrastructure, including hardware, software, networking, and physical facilities.'
+    explanation:
+      "AWS is responsible for securing the cloud infrastructure, including hardware, software, networking, and physical facilities.",
   },
   {
-    question: 'What is the customer responsible for in the Shared Responsibility Model?',
+    question:
+      "What is the customer responsible for in the Shared Responsibility Model?",
     options: [
-      'Managing the security of the cloud infrastructure',
-      'Protecting the guest OS, applications, and configuring security settings',
-      'Patching the AWS physical servers',
-      'Providing security for all AWS customers'
+      "Managing the security of the cloud infrastructure",
+      "Protecting the guest OS, applications, and configuring security settings",
+      "Patching the AWS physical servers",
+      "Providing security for all AWS customers",
     ],
     correct: [1],
-    explanation: 'Customers are responsible for managing the security of their own applications, data, guest OS, and network configurations.'
+    explanation:
+      "Customers are responsible for managing the security of their own applications, data, guest OS, and network configurations.",
   },
   {
-    question: 'Which AWS service requires the customer to handle most security configurations?',
-    options: [
-      'Amazon S3',
-      'Amazon DynamoDB',
-      'Amazon EC2',
-      'AWS Lambda'
-    ],
+    question:
+      "Which AWS service requires the customer to handle most security configurations?",
+    options: ["Amazon S3", "Amazon DynamoDB", "Amazon EC2", "AWS Lambda"],
     correct: [2],
-    explanation: 'EC2 is an IaaS service, meaning the customer must secure the guest OS, updates, patches, and security group settings.'
+    explanation:
+      "EC2 is an IaaS service, meaning the customer must secure the guest OS, updates, patches, and security group settings.",
   },
   {
-    question: 'How does security responsibility change for managed services like S3 and DynamoDB?',
+    question:
+      "How does security responsibility change for managed services like S3 and DynamoDB?",
     options: [
-      'AWS manages the infrastructure, OS, and platform while customers manage data classification, encryption, and permissions',
-      'Customers manage everything, including the OS and hardware',
-      'AWS provides no security features for managed services',
-      'Customers only need to worry about IAM roles'
+      "AWS manages the infrastructure, OS, and platform while customers manage data classification, encryption, and permissions",
+      "Customers manage everything, including the OS and hardware",
+      "AWS provides no security features for managed services",
+      "Customers only need to worry about IAM roles",
     ],
     correct: [0],
-    explanation: 'For managed services like S3 and DynamoDB, AWS handles the infrastructure while customers manage data security and access controls.'
+    explanation:
+      "For managed services like S3 and DynamoDB, AWS handles the infrastructure while customers manage data security and access controls.",
   },
   {
-    question: 'Which of the following is an example of an inherited control in the Shared Responsibility Model?',
+    question:
+      "Which of the following is an example of an inherited control in the Shared Responsibility Model?",
     options: [
-      'Patch management',
-      'Physical and environmental controls',
-      'Configuration management',
-      'Service and communication protection'
+      "Patch management",
+      "Physical and environmental controls",
+      "Configuration management",
+      "Service and communication protection",
     ],
     correct: [1],
-    explanation: 'Inherited controls are fully managed by AWS, such as physical and environmental security of data centers.'
+    explanation:
+      "Inherited controls are fully managed by AWS, such as physical and environmental security of data centers.",
   },
   {
-    question: 'Which of the following is a shared control between AWS and the customer?',
+    question:
+      "Which of the following is a shared control between AWS and the customer?",
     options: [
-      'Physical security of data centers',
-      'Application security updates',
-      'Patch management',
-      'Customer IAM configurations'
+      "Physical security of data centers",
+      "Application security updates",
+      "Patch management",
+      "Customer IAM configurations",
     ],
     correct: [2],
-    explanation: 'AWS patches and fixes the infrastructure, while customers are responsible for patching the guest OS and applications.'
+    explanation:
+      "AWS patches and fixes the infrastructure, while customers are responsible for patching the guest OS and applications.",
   },
   {
-    question: 'Which of these is a customer-specific control in the Shared Responsibility Model?',
+    question:
+      "Which of these is a customer-specific control in the Shared Responsibility Model?",
     options: [
-      'Infrastructure patch management',
-      'Data center physical security',
-      'Service and communication protection',
-      'Hardware maintenance'
+      "Infrastructure patch management",
+      "Data center physical security",
+      "Service and communication protection",
+      "Hardware maintenance",
     ],
     correct: [2],
-    explanation: 'Customers must manage service and communication protection, ensuring data is routed within specific security environments.'
+    explanation:
+      "Customers must manage service and communication protection, ensuring data is routed within specific security environments.",
   },
   {
-    question: 'Which security frameworks can customers use to determine compliance requirements?',
+    question:
+      "Which security frameworks can customers use to determine compliance requirements?",
     options: [
-      'AWS Security Model',
-      'ISO and NIST Cybersecurity Framework',
-      'AWS EC2 Compliance Guide',
-      'Shared Responsibility Checklist'
+      "AWS Security Model",
+      "ISO and NIST Cybersecurity Framework",
+      "AWS EC2 Compliance Guide",
+      "Shared Responsibility Checklist",
     ],
     correct: [1],
-    explanation: 'Customers can use established security standards like ISO and NIST to define compliance requirements for their AWS environment.'
+    explanation:
+      "Customers can use established security standards like ISO and NIST to define compliance requirements for their AWS environment.",
   },
   {
-    question: 'What is a best practice for applying the Shared Responsibility Model?',
+    question:
+      "What is a best practice for applying the Shared Responsibility Model?",
     options: [
-      'Rely only on AWS for security',
-      'Regularly review the security and configuration of AWS services used',
-      'Use only default security settings provided by AWS',
-      'Disable security features to reduce complexity'
+      "Rely only on AWS for security",
+      "Regularly review the security and configuration of AWS services used",
+      "Use only default security settings provided by AWS",
+      "Disable security features to reduce complexity",
     ],
     correct: [1],
-    explanation: 'Customers should regularly review security configurations and best practices to ensure their AWS environment remains secure.'
-  }
+    explanation:
+      "Customers should regularly review security configurations and best practices to ensure their AWS environment remains secure.",
+  },
 ];
-
 
 /*
 
