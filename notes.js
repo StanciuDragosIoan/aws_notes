@@ -75,6 +75,6 @@ Well Architected Framework paper:
 
 https://docs.aws.amazon.com/pdfs/wellarchitected/latest/framework/wellarchitected-framework.pdf
 
-
+converstation: https://chatgpt.com/c/67641263-d60c-8013-b22a-78b265c2b5cf
 
 */
